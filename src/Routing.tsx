@@ -1,14 +1,24 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Create from "./pages/Create";
-import Layout from "./pages/Layout";
-import Login from "./pages/Login";
-
+import Layout from "./layouts/Layout";
+import Home from "./pages/Home";
+import Account from "./pages/Account";
+import Lists from "./pages/lists/Lists";
+import New from "./pages/lists/New";
+import Slides from "./pages/lists/Slides";
+import Cards from "./pages/lists/Cards";
+import ListLayout from "./layouts/ListLayout";
 function Routing(){
    return( <BrowserRouter>
         <Routes>
             <Route path="/" element={<Layout />}>
-                <Route path="/create" element={<Create />} />
-                <Route path="/login" element={<Login />} />
+            <Route index element={<Home />} />
+            <Route index element={<Account />} />
+                <Route path="/my-lists" element={<ListLayout />}>
+                    <Route index element={<Lists />} />
+                    <Route path="/my-lists/new" element={<New />} />
+                    <Route path="/my-lists/slides" element={<Slides />} />
+                    <Route path="/my-lists/cards" element={<Cards />} />
+                </Route>
             </Route>
         </Routes>
     </BrowserRouter>

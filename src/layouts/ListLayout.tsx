@@ -1,13 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
 
-function Layout(){
+function ListLayout(){
     return(
         <div className="layout">
             <div className="top-menu">
-                <ul>
-                    <Link to="/create">Create</Link>
-                    <Link to="/login">Login</Link>
-                </ul>
+             <h1>My lists</h1>
             </div>
             <div className="page">
                 <Outlet />
@@ -15,4 +12,4 @@ function Layout(){
         </div>
     )
 }
-export default Layout;
+export default ListLayout;

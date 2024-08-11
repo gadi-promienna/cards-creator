@@ -6,8 +6,6 @@ import { ReactNode } from "react";
 import { BabyContextType, Baby } from "../@types/baby";
 import { List } from "../@types/list";
 import { encryptPassword } from "../helperFunctions/dataFormat";
-import Login from "../pages/Login";
-import { string } from "prop-types";
 
 export const BabiesContext = createContext<BabyContextType|null>(
    null

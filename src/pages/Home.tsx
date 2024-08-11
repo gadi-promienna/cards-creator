@@ -1,11 +1,9 @@
 import {} from "../hooks/use-babies-context";
-import { useContext } from "react";
 import { useEffect } from "react";
-import { Baby, BabyContextType } from "../@types/baby";
-import { BabiesContextProvider } from "../context/Babies";
+import { Baby, BabyContextType} from "../@types/baby";
 import useBabiesContext from "../hooks/use-babies-context";
 
-function Login(){
+function Home(){
     const {babies, baby, fetchBabies, getBaby} = useBabiesContext() as BabyContextType;
     useEffect(() => {
         fetchBabies()
@@ -22,4 +20,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default Home;

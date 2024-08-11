@@ -1,4 +1,4 @@
-import cart from './cart';
+import card from './card';
 
 export class List{
     category: string;
