@@ -4,15 +4,14 @@ import { Baby, BabyContextType} from "../@types/baby";
 import useBabiesContext from "../hooks/use-babies-context";
 
 function Home(){
-    const {babies, baby, fetchBabies, getBaby} = useBabiesContext() as BabyContextType;
+    const {babies, baby, fetchBabies, loginBaby} = useBabiesContext() as BabyContextType;
     useEffect(() => {
         fetchBabies()
     },
     [fetchBabies]
     )
 
-
-    const currentBaby:Baby|null = getBaby("test","test")
+    const currentBaby:Baby|null = loginBaby("test","test")
     console.log(currentBaby)
 
     return(

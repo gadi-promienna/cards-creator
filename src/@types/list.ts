@@ -1,6 +1,8 @@
 import card from './card';
+import listDTO from './listDTO';
 
-export class List{
+  export class List{
+  
     category: string;
     marker: number;
     words: string[];
@@ -40,6 +42,7 @@ export class List{
 
   export type ListContextType = {
     lists: List[];
+    list: List
     addList: (list: List) => void;
     updateList: (list: List) => void;
     deleteList: (category:string) => void;

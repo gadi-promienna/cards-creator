@@ -26,12 +26,13 @@ export function BabiesContextProvider({children}: {children: ReactNode} ){
         setBaby(response.data)
     }
 
-    // const fetchBaby = useCallback (async(login:string) => {
-    //     const response = await axios.get("http://localhost:3001/babies?login="+login)
-    //     setBaby(response.data)
-    // }, [] )
+    const loadBaby = async (id:number)=>{
+        const response = await axios.get(`http://localhost:3001/babies/${id.toString()}`)
+        const foundBaby = await response.data as Baby
+        setBaby(foundBaby)
+    }
 
-    const getBaby = (login:string,password:string)=>{
+    const loginBaby = (login:string,password:string)=>{
         let found = babies.find((b:Baby)=>(b.login===login ))
         if(found?.password===password) {
             setBaby(found)
@@ -54,13 +55,23 @@ export function BabiesContextProvider({children}: {children: ReactNode} ){
         setBaby(response.data)
     }
 
+    const babyUpdateListsById = async (id:number, words_lists:List[]) => {
+        const response = await axios.put(`http://localhost:3001/books/${id}`, {
+                words_lists: words_lists,
+            })
+
+        setBaby(response.data)
+    }
+
     const value_to_share = {
         babies,
         baby,
         fetchBabies,
-        getBaby,
+        loadBaby,
+        loginBaby,
         babyCreate,
         babyUpdateById,
+        babyUpdateListsById,
         babyDeleteById
     }
 

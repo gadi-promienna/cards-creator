@@ -12,7 +12,7 @@ function Routing(){
         <Routes>
             <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route index element={<Account />} />
+            <Route path="account" element={<Account />} />
                 <Route path="/my-lists" element={<ListLayout />}>
                     <Route index element={<Lists />} />
                     <Route path="/my-lists/new" element={<New />} />
