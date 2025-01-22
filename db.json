@@ -1,17 +1,8 @@
 {
-    "babies": [
+    "lists": [
         {
-            "id": 5,
-            "name": "Test",
-            "login": "test",
-            "password": "test",
-            "words_lists": [
-                {
-                    "category": "Rośliny",
-                    "marker": "0",
-                    "words": ["drzewo liściaste","drzewo iglaste","krzew","nowe","wierzba"] 
-                }
-            ]
+            "name": "zwierzęta",
+            "words": ["pies","kot","mysz","królik","kura","miś","lew","małpa"]
         }
     ] 
 }

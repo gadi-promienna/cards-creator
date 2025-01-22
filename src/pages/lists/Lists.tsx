@@ -7,7 +7,7 @@ import useListsContext from "../../hooks/use-lists-context";
 function Lists(){
     const {lists, list, getListByCategory} = useListsContext() as ListContextType;
     getListByCategory('Rośliny')
-    //if(list!=null) console.log(Object.assign(new List(), list).wordsListToText())
+    if(list!=null) console.log(Object.assign(new List(), list).wordsListToText())
     const renderedCategories = lists.map( 
         (list)=>{ 
             return( 
