@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
-import Account from "./pages/Account";
 import Lists from "./pages/lists/Lists";
 import New from "./pages/lists/New";
 import Slides from "./pages/lists/Slides";
@@ -10,9 +9,8 @@ import ListLayout from "./layouts/ListLayout";
 function Routing(){
    return( <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="account" element={<Account />} />
+        <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
                 <Route path="/my-lists" element={<ListLayout />}>
                     <Route index element={<Lists />} />
                     <Route path="/my-lists/new" element={<New />} />

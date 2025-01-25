@@ -1,11 +1,8 @@
 import card from './card';
-import listDTO from './listDTO';
-
   export class List{
-  
-    category: string;
-    marker: number;
+    name: string;
     words: string[];
+    marker: number;
     createWordsList(text:string){
       this.words=text.split(',')
     }
@@ -34,17 +31,17 @@ import listDTO from './listDTO';
 
     }
 
-    createCarts(useMarker?:boolean){
+    createCards(){
 
     }
   }
 
-
   export type ListContextType = {
     lists: List[];
-    list: List
-    addList: (list: List) => void;
-    updateList: (list: List) => void;
-    deleteList: (category:string) => void;
-    getListByCategory: (category:string) => void;
+    list: List;
+    fetchLists: ()=>Promise<void>,
+    listCreate: (name:string,words:string[]) => void;
+    listUpdate: (id:number,name:string,words:string[]) => void;
+    listDelete: (id:number) => void;
+    getListByID: (id:number) => void;
   };

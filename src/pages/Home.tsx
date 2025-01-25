@@ -1,21 +1,33 @@
-import {} from "../hooks/use-babies-context";
+import { object } from "prop-types";
+import { List, ListContextType } from "../@types/list";
 import { useEffect } from "react";
-import { Baby, BabyContextType} from "../@types/baby";
-import useBabiesContext from "../hooks/use-babies-context";
-
+import useListsContext from "../hooks/use-lists-context";
+import NewListForm from "../components/NewListForm";
 function Home(){
-    const {babies, baby, fetchBabies, loginBaby} = useBabiesContext() as BabyContextType;
+    const {fetchLists, lists, list} = useListsContext() as ListContextType;
+    
     useEffect(() => {
-        fetchBabies()
+        fetchLists()
     },
-    [fetchBabies]
+    [fetchLists]
     )
 
-    const currentBaby:Baby|null = loginBaby("test","test")
-    console.log(currentBaby)
-
+    const renderedLists = lists.map( 
+        (list)=>{ 
+            return( 
+                <>
+                    <h3>{list.name}</h3>
+                    <p className="text">{list.words}</p>
+                </>
+             )
+        }
+    )
     return(
-        <h2>Login</h2>
+        <div>
+             {/* <NewListForm></NewListForm> */}
+            <h2>Twoje Listy</h2>
+            {renderedLists}
+        </div>
     )
 }
 

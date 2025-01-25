@@ -1,8 +1,27 @@
 {
-    "lists": [
-        {
-            "name": "zwierzęta",
-            "words": ["pies","kot","mysz","królik","kura","miś","lew","małpa"]
-        }
-    ] 
+  "lists": [
+    {
+      "name": "zwierzęta",
+      "words": [
+        "pies",
+        "kot",
+        "mysz",
+        "królik",
+        "kura",
+        "miś",
+        "lew",
+        "małpa"
+      ],
+      "id": "5585"
+    },
+    {
+      "id": "1a62",
+      "name": "psy",
+      "words": [
+        "myszka",
+        "pies",
+        "kwiat"
+      ]
+    }
+  ]
 }
