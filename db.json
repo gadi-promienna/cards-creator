@@ -12,15 +12,25 @@
         "lew",
         "małpa"
       ],
-      "id": "5585"
+      "id": 1
     },
     {
-      "id": "1a62",
+      "id": 2,
       "name": "psy",
       "words": [
         "myszka",
         "pies",
         "kwiat"
+      ]
+    },
+    {
+      "id": "da15",
+      "name": "kwiaty",
+      "words": [
+        "róża",
+        "stokrotka",
+        "storczyk",
+        "wierzba"
       ]
     }
   ]
