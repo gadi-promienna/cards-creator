@@ -33,5 +33,16 @@
         "wierzba"
       ]
     }
+  ],
+
+  "cards": [
+    {
+      "word": "pies",
+      "image_url": ""
+    },
+    {
+      "word": "kot",
+      "image_url": ""
+    }
   ]
 }

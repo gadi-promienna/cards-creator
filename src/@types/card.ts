@@ -1,6 +1,22 @@
-export default interface card
+export interface Card
 {    
-    text: string;
-    image: string;
+    word: string;
+    image_url: string;
 }
+
+Card,
+findCard,
+fetchCards,
+cardCreate,
+cardUpdate,
+cardDelete
  
+export type CardContextType = {
+    cards: Card[];
+    card: Card;
+    fetchCards: ()=>Promise<void>,
+    cardCreate: (word:string) => Promise<any>;
+    cardUpdate: (id:number,word:string) => Promise<any>;
+    cardDelete: (id:number) => Promise<boolean>;
+    findCard: (word:string) => Promise<any>;
+  };

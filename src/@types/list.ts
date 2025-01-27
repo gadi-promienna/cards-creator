@@ -1,5 +1,6 @@
 import card from './card';
-  export class List{
+
+export class List{
     name: string;
     words: string[];
     marker: number;
@@ -32,9 +33,8 @@ import card from './card';
     }
 
     createCards(){
-
     }
-  }
+}  
 
   export type ListContextType = {
     lists: List[];
