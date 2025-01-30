@@ -3,13 +3,6 @@ export interface Card
     word: string;
     image_url: string;
 }
-
-Card,
-findCard,
-fetchCards,
-cardCreate,
-cardUpdate,
-cardDelete
  
 export type CardContextType = {
     cards: Card[];

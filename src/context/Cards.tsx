@@ -5,17 +5,15 @@ import { ReactNode } from "react";
 import { CardContextType, Card } from "../@types/card";
 import axios from "axios";
 
-// fetchCards: ()=>Promise<void>,
-//     cardCreate: (name:string,words:string[]) => void;
-//     cardUpdate: (id:number,name:string,words:string[]) => void;
-//     cardDelete: (id:number) => void;
-//     findCard: (id:number) => void;
-
 export const CardsContext = createContext<CardContextType|null>(
    null
 );
 
 export function CardsContextProvider({children}: {children: ReactNode} ){
+    const [deck, setDeck] = useState<Card[]>([]); 
+    const [card, setCard] = useState<Card|null>(null);
+    const [cards, setCards] = useState<Card[]|[]>(null);
+    
     const fetchCards = useCallback (async() => {
         const response = await axios.get('http://localhost:3001/cards')
         setCards(response.data)
@@ -23,17 +21,20 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
 
     const findCard = useCallback (async(word:string) => {
         const response = await axios.get(`http://localhost:3001/cards?word=${word}`)
+        const results = response.data;
+        if (results.length < 1) {
+            cardCreate(word);
+        }
+        else if (!results.image_url){
+            cardAutoUpdate(results[0].id)
+        };
+        
         return(response.data[0])
     }, [] )
 
-    const [cards, setCards] = useState<Card[]>([]); 
-    const [card, setCard] = useState<Card|null>(null);
-
-    const cardCreate = async (word:"string") => {
+    const cardCreate = async (word:string) => {
         const response = await axios.post('http://localhost:3001/cards', {word: word, image_url:""})
-        return response.data[0]
-        // setCards([...Cards, response.data])
-        // setCard(response.data)
+        setDeck([...deck, response.data])
     }
 
     const cardDelete = async (id:number) => {
@@ -43,15 +44,21 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
 
     const cardUpdate = async (id:number, word:string) => {
         const response = await axios.put(`http://localhost:3001/cards/${id}`, {
-                word: word,
+                word: word
             })
-        return(response.data[0])
+        setDeck([...deck, response.data])
     }
  
+    const cardAutoUpdate = async (id:number) => {
+        const response = await axios.put(`http://localhost:3001/cards/${id}`, {
+            image_url: "updated.jpg"
+        })
+    }
 
     const value_to_share = {
         cards,
         card,
+        deck,
         findCard,
         fetchCards,
         cardCreate,

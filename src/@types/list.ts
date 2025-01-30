@@ -1,9 +1,10 @@
-import card from './card';
+import { Card } from "./card";
 
 export class List{
     name: string;
     words: string[];
     marker: number;
+
     createWordsList(text:string){
       this.words=text.split(',')
     }
@@ -33,7 +34,12 @@ export class List{
     }
 
     createCards(){
-    }
+      // const cards = this.words.map(
+      //   (word)=>{
+      //     return findCard
+      //   })
+      }
+
 }  
 
   export type ListContextType = {
