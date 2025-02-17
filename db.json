@@ -12,10 +12,10 @@
         "lew",
         "małpa"
       ],
-      "id": 1
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "psy",
       "words": [
         "myszka",
@@ -32,16 +32,169 @@
         "storczyk",
         "wierzba"
       ]
+    },
+    {
+      "id": "8f7e",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "c8c3",
+      "name": "Basia",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "0c15",
+      "name": "Basia",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "1f0d",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "3fe3",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "dfc1",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "481f",
+      "name": "Ludzie2",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "d87b",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "d6ba",
+      "name": "Ludzie2",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "8e2f",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "b33e",
+      "name": "Przedmioty",
+      "words": [
+        "żelazko",
+        "stół",
+        "taboret"
+      ]
     }
   ],
-
   "cards": [
     {
-      "word": "pies",
+      "image_url": "updated.jpg",
+      "id": "a80f"
+    },
+    {
+      "image_url": "updated.jpg",
+      "id": "4ff8"
+    },
+    {
+      "id": "d2d6",
+      "word": "mysz",
       "image_url": ""
     },
     {
-      "word": "kot",
+      "id": "6bf1",
+      "word": "miś",
+      "image_url": ""
+    },
+    {
+      "id": "b0da",
+      "word": "lew",
+      "image_url": ""
+    },
+    {
+      "id": "40cb",
+      "word": "małpa",
+      "image_url": ""
+    },
+    {
+      "id": "3a3a",
+      "word": "królik",
+      "image_url": ""
+    },
+    {
+      "id": "3d9c",
+      "word": "kura",
+      "image_url": ""
+    },
+    {
+      "id": "9cfe",
+      "word": "żelazko",
+      "image_url": ""
+    },
+    {
+      "id": "d058",
+      "word": "stół",
+      "image_url": ""
+    },
+    {
+      "id": "a1e7",
+      "word": "taboret",
       "image_url": ""
     }
   ]

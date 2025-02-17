@@ -1,10 +1,12 @@
 import { useState } from "react"
 import useListsContext from "../hooks/use-lists-context"
+import useCardsContext from "../hooks/use-cards-context"
 
 function NewListForm(){
     const [name, setName] = useState("")
     const [words, setWords] = useState("")
     const {listCreate} = useListsContext()
+    const {deckCreate} = useCardsContext()
     
     const onNameChange = (e) => {
         setName(e.target.value)
@@ -18,6 +20,7 @@ function NewListForm(){
         e.preventDefault()
         const wordsToArray = words.split(',')
         listCreate(name,wordsToArray)
+        deckCreate(wordsToArray)
         //TODO - check words
     }
 

@@ -19,6 +19,12 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         setCards(response.data)
     }, [] )
 
+    const deckCreate = async(words:[string]) => {
+        words.forEach(word => {
+            cardCreate(word)
+        });
+    }
+
     const findCard = useCallback (async(word:string) => {
         const response = await axios.get(`http://localhost:3001/cards?word=${word}`)
         const results = response.data;
@@ -27,9 +33,8 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         }
         else if (!results.image_url){
             cardAutoUpdate(results[0].id)
-        };
-        
-        return(response.data[0])
+        }
+       else setDeck([...deck, results])
     }, [] )
 
     const cardCreate = async (word:string) => {
@@ -59,6 +64,7 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         cards,
         card,
         deck,
+        deckCreate,
         findCard,
         fetchCards,
         cardCreate,
@@ -66,7 +72,8 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         cardDelete
     }
 
-    return( <CardsContext.Provider value={value_to_share}>
+    return( 
+    <CardsContext.Provider value={value_to_share}>
         {children}
     </CardsContext.Provider> )
 }

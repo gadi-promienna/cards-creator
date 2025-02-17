@@ -49,5 +49,6 @@ export class List{
     listCreate: (name:string,words:string[]) => void;
     listUpdate: (id:number,name:string,words:string[]) => void;
     listDelete: (id:number) => void;
-    getListByID: (id:number) => void;
+    getList: () => List|null;
+    getListByID: (id:string) => void;
   };

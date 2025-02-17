@@ -11,18 +11,24 @@ export const ListsContext = createContext<ListContextType|null>(
 
 export function ListsContextProvider({children}: {children: ReactNode} ){
    
+    const [lists, setLists] = useState<List[]>([]); 
+    const [list, setList] = useState<List|null>(null);
+
      const fetchLists = useCallback (async() => {
         const response = await axios.get('http://localhost:3001/lists')
         setLists(response.data)
     }, [] )
 
-    const getListByID = useCallback (async(id:number) => {
+    const getList = useCallback( () => 
+        {
+            return( list )
+        }, [list]
+    )
+
+    const getListByID = useCallback (async(id:string) => {
         const response = await axios.get(`http://localhost:3001/lists/${id}`)
         setList(response.data)
     }, [] )
-
-    const [lists, setLists] = useState<List[]>([]); 
-    const [list, setList] = useState<List|null>(null);
 
     const listCreate = async (name:string, words:String[]) => {
         const response = await axios.post('http://localhost:3001/lists', {name: name, words:words})
@@ -49,6 +55,7 @@ export function ListsContextProvider({children}: {children: ReactNode} ){
         lists,
         list,
         fetchLists,
+        getList,
         getListByID,
         listCreate,
         listUpdate,

@@ -7,11 +7,9 @@ function ListLayout(){
             <div className="top-menu">
                 <h1>My lists</h1>
             </div>
-            <ListsContextProvider>
                 <div className="page">
                     <Outlet />
                 </div>
-            </ListsContextProvider>
         </div>
     )
 }

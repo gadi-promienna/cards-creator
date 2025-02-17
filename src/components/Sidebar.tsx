@@ -9,6 +9,7 @@ function Sidebar() {
         fetchLists()
         },[fetchLists])
 
+        console.log(lists)
     const renderedLists = lists.map( 
         (list)=>{ 
             const renderedWords = list.words.map((word)=>
@@ -26,6 +27,7 @@ function Sidebar() {
              )
         }
     )
+    
     return(
         <div className="sidebar">
             <h2>Twoje Listy</h2>

@@ -6,16 +6,19 @@ import New from "./pages/lists/New";
 import Slides from "./pages/lists/Slides";
 import Cards from "./pages/lists/Cards";
 import ListLayout from "./layouts/ListLayout";
+import PresentationLayout from "./layouts/PresentationLayout";
 function Routing(){
    return( <BrowserRouter>
         <Routes>
+        <Route path="/presentation" element={<PresentationLayout />}>
+            <Route path="/presentation/slides/:id" element={<Slides />} />
+            <Route path="/presentation/cards" element={<Cards />} />
+        </Route>
         <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="/my-lists" element={<ListLayout />}>
                     <Route index element={<Lists />} />
                     <Route path="/my-lists/new" element={<New />} />
-                    <Route path="/my-lists/slides" element={<Slides />} />
-                    <Route path="/my-lists/cards" element={<Cards />} />
                 </Route>
             </Route>
         </Routes>

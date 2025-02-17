@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
 import Routing from './Routing';
-
+import { ListsContextProvider } from './context/Lists';
+import { CardsContextProvider } from './context/Cards';
 function App() {
   return (
-      <Routing />
+    <ListsContextProvider>
+      <CardsContextProvider>
+        <Routing />
+      </CardsContextProvider>
+    </ListsContextProvider>
   )
 }
 

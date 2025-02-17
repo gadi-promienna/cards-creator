@@ -12,6 +12,7 @@ function Lists(){
     [fetchLists]
     )
 
+    console.log(lists)
     const renderedLists = lists.map( 
         (list)=>{ 
             return( 
