@@ -25,21 +25,42 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         });
     }
 
-    const findCard = useCallback (async(word:string) => {
+    const deckFetch =
+       (words=[]) => {
+        const deckToDisplayPromises = words.map(async(word:string) => {
+             const card = await findCard(word)
+             if(card && card.length>0) return card[0]
+            });
+            Promise.all(deckToDisplayPromises).then(
+                (values)=>{
+                    const deckToDisplay = values.filter(
+                        (v)=>{return v!==undefined}
+                    )
+                    console.log(deckToDisplay)
+                    setDeck(deckToDisplay)
+                }
+            )
+        }
+
+    const findCard = async(word:string) => {
         const response = await axios.get(`http://localhost:3001/cards?word=${word}`)
-        const results = response.data;
-        if (results.length < 1) {
-            cardCreate(word);
-        }
-        else if (!results.image_url){
-            cardAutoUpdate(results[0].id)
-        }
-       else setDeck([...deck, results])
-    }, [] )
+        const results = response.data.filter(
+                (el)=>{ 
+                    if("word" in el) return true
+                    else return false
+                }
+            )
+            console.log("talia")
+            // console.log(deck)
+            // console.log(results)
+            // deckCard = results
+            // if(results[0])setDeck([...deck, results[0]])
+        return results;
+    }
 
     const cardCreate = async (word:string) => {
         const response = await axios.post('http://localhost:3001/cards', {word: word, image_url:""})
-        setDeck([...deck, response.data])
+        setDeck([...deck, response.data[0]])
     }
 
     const cardDelete = async (id:number) => {
@@ -65,7 +86,8 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         card,
         deck,
         deckCreate,
-        findCard,
+        deckFetch,
+        // findCard,
         fetchCards,
         cardCreate,
         cardUpdate,
