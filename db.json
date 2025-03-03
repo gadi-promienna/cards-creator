@@ -141,6 +141,231 @@
         "stół",
         "taboret"
       ]
+    },
+    {
+      "id": "60f3",
+      "name": "leki",
+      "words": [
+        "fenistil",
+        "zyrtek"
+      ]
+    },
+    {
+      "id": "6a76",
+      "name": "rodzina",
+      "words": [
+        "babcia",
+        "dziadek",
+        "ciocia"
+      ]
+    },
+    {
+      "id": "1826",
+      "name": "ubrania",
+      "words": [
+        "spodnie",
+        "bluzka",
+        "getry"
+      ]
+    },
+    {
+      "id": "ef25",
+      "name": "Zwirzęta",
+      "words": [
+        "Lis",
+        " wiewióeka",
+        "grzechotka"
+      ]
+    },
+    {
+      "id": "b1d3",
+      "name": "zwierzęta3",
+      "words": [
+        "kot",
+        "pies",
+        "chomik",
+        "królik"
+      ]
+    },
+    {
+      "id": "4b90",
+      "name": "Przedmioty",
+      "words": [
+        "mydło"
+      ]
+    },
+    {
+      "id": "3c5d",
+      "name": "Ludzie",
+      "words": [
+        "a",
+        "b",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "id": "25d0",
+      "name": "kwiaty",
+      "words": [
+        "lis",
+        "wiewiórka"
+      ]
+    },
+    {
+      "id": "58bd",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "3915",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "854c",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "d732",
+      "name": "komputer",
+      "words": [
+        "myszka",
+        "pies",
+        "kwiat"
+      ]
+    },
+    {
+      "id": "d163",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "57b4",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "6868",
+      "name": "Ludzie",
+      "words": [
+        "żelazko",
+        "stół",
+        "taboret"
+      ]
+    },
+    {
+      "id": "c0a1",
+      "name": "Ludzie",
+      "words": [
+        "mama",
+        " tata",
+        " babcia",
+        " dziadek"
+      ]
+    },
+    {
+      "id": "6cd8",
+      "name": "zwierzęta",
+      "words": [
+        "kot",
+        "pies",
+        "chomik",
+        "królik"
+      ]
+    },
+    {
+      "id": "4bdb",
+      "name": "Zwirzęta",
+      "words": [
+        "kot",
+        "pies",
+        "chomik",
+        "królik"
+      ]
+    },
+    {
+      "id": "15db",
+      "name": "Animals",
+      "words": [
+        "cat",
+        "dog",
+        "hamster",
+        "rabbit"
+      ]
+    },
+    {
+      "id": "0783",
+      "name": "Toys",
+      "words": [
+        "doll",
+        "car",
+        "ball"
+      ]
+    },
+    {
+      "id": "1e9e",
+      "name": "Cloths",
+      "words": [
+        "dress",
+        "pidjama",
+        "socks"
+      ]
+    },
+    {
+      "id": "e84a",
+      "name": "Animals2",
+      "words": [
+        "cat",
+        "dog",
+        "hamster",
+        "rabbit"
+      ]
+    },
+    {
+      "id": "9402",
+      "name": "Animals3",
+      "words": [
+        "cat",
+        "dog",
+        "hamster",
+        "rabbit"
+      ]
+    },
+    {
+      "id": "8e4a",
+      "name": "Przedmioty",
+      "words": [
+        "żelazko",
+        "stół",
+        "taboret"
+      ]
     }
   ],
   "cards": [
@@ -195,6 +420,381 @@
     {
       "id": "a1e7",
       "word": "taboret",
+      "image_url": ""
+    },
+    {
+      "id": "df00",
+      "word": "bluzka",
+      "image_url": "url"
+    },
+    {
+      "id": "c861",
+      "word": "getry",
+      "image_url": "url"
+    },
+    {
+      "id": "1e3a",
+      "word": "Lis",
+      "image_url": "url"
+    },
+    {
+      "id": "638f",
+      "word": " wiewióeka",
+      "image_url": "url"
+    },
+    {
+      "id": "02be",
+      "word": "grzechotka",
+      "image_url": "url"
+    },
+    {
+      "id": "4a10",
+      "word": "chomik",
+      "image_url": "url"
+    },
+    {
+      "id": "be0a",
+      "word": "królik",
+      "image_url": "url"
+    },
+    {
+      "id": "1183",
+      "word": "pies",
+      "image_url": "url"
+    },
+    {
+      "id": "94ca",
+      "word": "kot",
+      "image_url": "url"
+    },
+    {
+      "id": "1c44",
+      "word": "mydło",
+      "image_url": "url"
+    },
+    {
+      "id": "4351",
+      "word": "d",
+      "image_url": "url"
+    },
+    {
+      "id": "6253",
+      "word": "b",
+      "image_url": "url"
+    },
+    {
+      "id": "d013",
+      "word": "a",
+      "image_url": "url"
+    },
+    {
+      "id": "3191",
+      "word": "d",
+      "image_url": "url"
+    },
+    {
+      "id": "43b8",
+      "word": "wiewiórka",
+      "image_url": "url"
+    },
+    {
+      "id": "8d4c",
+      "word": "lis",
+      "image_url": "url"
+    },
+    {
+      "id": "3dd9",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "b1f1",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "2d78",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "e4a2",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "2788",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "b88a",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "8053",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "9e33",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "d56c",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "aed6",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "f6f9",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "c517",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "2d7c",
+      "word": "pies",
+      "image_url": "url"
+    },
+    {
+      "id": "61f0",
+      "word": "kwiat",
+      "image_url": "url"
+    },
+    {
+      "id": "f313",
+      "word": "myszka",
+      "image_url": "url"
+    },
+    {
+      "id": "da63",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "6166",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "32cd",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "0df6",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "b2ad",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "9cba",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "3654",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "7fc8",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "8ea2",
+      "word": "żelazko",
+      "image_url": "url"
+    },
+    {
+      "id": "f3ce",
+      "word": "taboret",
+      "image_url": "url"
+    },
+    {
+      "id": "f918",
+      "word": "stół",
+      "image_url": "url"
+    },
+    {
+      "id": "3328",
+      "word": "mama",
+      "image_url": "url"
+    },
+    {
+      "id": "bb22",
+      "word": " dziadek",
+      "image_url": "url"
+    },
+    {
+      "id": "d322",
+      "word": " tata",
+      "image_url": "url"
+    },
+    {
+      "id": "5640",
+      "word": " babcia",
+      "image_url": "url"
+    },
+    {
+      "id": "4ff5",
+      "word": "kot",
+      "image_url": "https://images.unsplash.com/photo-1572807054847-b58c5dbf641b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxrb3R8ZW58MHx8fHwxNzQwODIyMzI0fDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "b463",
+      "word": "królik",
+      "image_url": ""
+    },
+    {
+      "id": "44e7",
+      "word": "chomik",
+      "image_url": "https://images.unsplash.com/photo-1624601851027-427fbe14cd20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxjaG9taWt8ZW58MHx8fHwxNzQwOTEzNTI4fDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "ac32",
+      "word": "pies",
+      "image_url": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxwaWVzfGVufDB8fHx8MTc0MDkxMzUyOHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "5e60",
+      "word": "kot",
+      "image_url": "https://images.unsplash.com/photo-1572807054847-b58c5dbf641b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxrb3R8ZW58MHx8fHwxNzQwODIyMzI0fDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "f651",
+      "word": "pies",
+      "image_url": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxwaWVzfGVufDB8fHx8MTc0MDkxMzUyOHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "79fe",
+      "word": "chomik",
+      "image_url": "https://images.unsplash.com/photo-1624601851027-427fbe14cd20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxjaG9taWt8ZW58MHx8fHwxNzQwOTEzNTI4fDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "92f0",
+      "word": "królik",
+      "image_url": ""
+    },
+    {
+      "id": "641c",
+      "word": "dog",
+      "image_url": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxkb2d8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "cd5a",
+      "word": "rabbit",
+      "image_url": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxyYWJiaXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "e212",
+      "word": "hamster",
+      "image_url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxoYW1zdGVyfGVufDB8fHx8MTc0MDkxMzk2MHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "d9c0",
+      "word": "cat",
+      "image_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "a11b",
+      "word": "doll",
+      "image_url": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxkb2xsfGVufDB8fHx8MTc0MDkxNTU4NHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "0167",
+      "word": "ball",
+      "image_url": "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxiYWxsfGVufDB8fHx8MTc0MDkxNTU4NHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "5f18",
+      "word": "car",
+      "image_url": "https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MXwxfHNlYXJjaHwxfHxjYXJ8ZW58MHx8fHwxNzQwOTE1NTg0fDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "06b2",
+      "word": "dress",
+      "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxkcmVzc3xlbnwwfHx8fDE3NDA5MTU3OTh8MA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "e75a",
+      "word": "pidjama",
+      "image_url": ""
+    },
+    {
+      "id": "f4a4",
+      "word": "socks",
+      "image_url": "https://images.unsplash.com/photo-1585499583264-491df5142e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxzb2Nrc3xlbnwwfHx8fDE3NDA5MTU3OTh8MA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "c896",
+      "word": "rabbit",
+      "image_url": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxyYWJiaXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "3910",
+      "word": "dog",
+      "image_url": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxkb2d8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "9867",
+      "word": "cat",
+      "image_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "0da5",
+      "word": "hamster",
+      "image_url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxoYW1zdGVyfGVufDB8fHx8MTc0MDkxMzk2MHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "2e8e",
+      "word": "cat",
+      "image_url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxjYXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "6816",
+      "word": "hamster",
+      "image_url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxoYW1zdGVyfGVufDB8fHx8MTc0MDkxMzk2MHww&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "4c1c",
+      "word": "dog",
+      "image_url": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxkb2d8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "508c",
+      "word": "rabbit",
+      "image_url": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxyYWJiaXR8ZW58MHx8fHwxNzQwOTEzOTYwfDA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "4862",
+      "word": "taboret",
+      "image_url": ""
+    },
+    {
+      "id": "f75e",
+      "word": "stół",
+      "image_url": "https://images.unsplash.com/photo-1659553234852-66a942e1c3b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTIwNzl8MHwxfHNlYXJjaHwxfHxzdCVDMyVCMyVDNSU4MnxlbnwwfHx8fDE3NDA5MTkxNjJ8MA&ixlib=rb-4.0.3&q=80&w=400"
+    },
+    {
+      "id": "9e8e",
+      "word": "żelazko",
       "image_url": ""
     }
   ]

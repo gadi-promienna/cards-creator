@@ -15,7 +15,7 @@ function Slides(){
    const [ifReadyDeck, setIfReadyDeck] = useState<number>(0)
    
    const getListByIdEffect = ()=>{
-      getListByID( id );
+      if(!list) getListByID( id );
    }
 
    useEffect(

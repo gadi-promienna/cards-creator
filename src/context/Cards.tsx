@@ -22,8 +22,7 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
     const deckCreate = async(words:[string]) => {
         words.forEach(word => {
             cardCreate(word)
-        });
-    }
+        });}
 
     const deckFetch =
        (words=[]) => {
@@ -38,9 +37,7 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
                     )
                     console.log(deckToDisplay)
                     setDeck(deckToDisplay)
-                }
-            )
-        }
+                })}
 
     const findCard = async(word:string) => {
         const response = await axios.get(`http://localhost:3001/cards?word=${word}`)
@@ -51,17 +48,28 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
                 }
             )
             console.log("talia")
-            // console.log(deck)
-            // console.log(results)
-            // deckCard = results
-            // if(results[0])setDeck([...deck, results[0]])
-        return results;
-    }
+        return results; }
 
     const cardCreate = async (word:string) => {
-        const response = await axios.post('http://localhost:3001/cards', {word: word, image_url:""})
-        setDeck([...deck, response.data[0]])
+        const image_url = await getImageUrl(word)
+        const response = await axios.post('http://localhost:3001/cards', {word: word, image_url:image_url})
     }
+
+    const getImageUrl = async (word:string)=>{
+        const response = await axios.get(
+            'https://api.unsplash.com/search/photos',
+            {
+                headers: {
+                    Authorization: 'unsplash-key'
+                },
+                params: {
+                    query: word,
+                }})
+        const results = response.data["results"]
+        if(results.length>0) {
+            console.log(results[0].urls.small)
+            return results[0].urls.small
+        } else return ""}
 
     const cardDelete = async (id:number) => {
         const response = await axios.delete(`http://localhost:3001/cards/${id}`)
@@ -72,14 +80,12 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         const response = await axios.put(`http://localhost:3001/cards/${id}`, {
                 word: word
             })
-        setDeck([...deck, response.data])
-    }
+        setDeck([...deck, response.data])}
  
     const cardAutoUpdate = async (id:number) => {
         const response = await axios.put(`http://localhost:3001/cards/${id}`, {
             image_url: "updated.jpg"
-        })
-    }
+        })}
 
     const value_to_share = {
         cards,
@@ -87,7 +93,6 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         deck,
         deckCreate,
         deckFetch,
-        // findCard,
         fetchCards,
         cardCreate,
         cardUpdate,
