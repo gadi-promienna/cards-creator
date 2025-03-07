@@ -4,7 +4,7 @@ import useListsContext from "../../hooks/use-lists-context";
 import useCardsContext from "../../hooks/use-cards-context";
 import { instanceOf } from "prop-types";
 import { create } from "domain";
-
+import Slide from "../../components/slide";
 
 function Slides(){
    const { getListByID, list } = useListsContext()
@@ -39,7 +39,7 @@ function Slides(){
 
    const renderedDeck = deck.map(
       (card)=>{
-         return <h2>{card?.word}</h2>
+         return <Slide word={card.word} image_url={card.image_url}></Slide>
       }
    )
    return(

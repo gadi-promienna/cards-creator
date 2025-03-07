@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$myColor: red;
+
+body {
+  color: $myColor;
+}

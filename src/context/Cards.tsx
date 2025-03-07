@@ -60,7 +60,7 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
             'https://api.unsplash.com/search/photos',
             {
                 headers: {
-                    Authorization: 'unsplash-key'
+                    Authorization: 'Client-ID'
                 },
                 params: {
                     query: word,
