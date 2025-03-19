@@ -25,12 +25,12 @@ function NewListForm(){
     }
 
     return(
-        <form onSubmit={onSubmit}>
-            <label>Tytuł listy</label>
-            <input onChange={onNameChange} type="text" id="fName" name="name" placeholder="Tytuł listy"/>
-            <label>Lista słów odzielona przecinkiem</label>
-            <input onChange={onWordsChange} type="text" id="fWords" name="words" placeholder="Tytuł listy"/>
-            <button type="submit">Generuj i zapisz</button>
+        <form className="flex flex-col align-middle gap-4 px-4 py-4" onSubmit={onSubmit}>
+            <label htmlFor="name">Tytuł listy</label>
+            <input className="rounded-xl" onChange={onNameChange} type="text" id="fName" name="name" placeholder="Tytuł listy"/>
+            <label htmlFor="words">Lista słów odzielona przecinkiem</label>
+            <textarea className="rounded-xl h-60" onChange={onWordsChange} id="fWords" name="words" placeholder="np. krzesło,stół,kanapa"/>
+            <button className="cta_button" type="submit">Generuj i zapisz</button>
         </form>
     )
 }

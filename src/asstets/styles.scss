@@ -1,9 +1,227 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+//*** Custom utilities values ***//
+$based-space: 2px;
 
-$myColor: red;
+//*** Custom colors values ***//
+$lightness: #FBF9F8;
+$middle1: #FCF4ED;
+$middle2: #FBACAC;
+$middle3: #F86D6D;
+$orange: #E29753;
+$darkness: #FF4B4B;
+$text-grey1: #908D8D;
+$text-brown: #673434;
+//* Typhography *//
 
-body {
-  color: $myColor;
+*{
+  text-transform: uppercase;
+  transition: all 0.5s;
 }
+
+h1{
+  font-size: 24pt;
+  line-height: 36px;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  font-size: 18pt;
+  line-height: 30px;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-size: 16pt;
+  line-height: 30px;
+  text-align: center;
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.simple-text{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12pt;
+  line-height: 18px;
+  text-transform: none;
+}
+
+//* Design components *//
+.cta_button{
+  font-size: 20px;
+  width: fit-content;
+  color: $text-brown;
+  background: $middle2;
+  padding: 15px 30px;
+  border-radius: 12px;
+  &:hover{
+    color: $middle2;
+    background: $text-brown;
+  }
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  // padding-bottom: 32px;
+  .image{
+    overflow: hidden; 
+      img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.top-bar{
+
+}
+
+.top-menu{
+  font-family: "Inter", sans-serif;
+}
+
+form {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  min-width: 80%;
+  justify-self: center;
+  input, textarea{
+   min-width: 80%;
+   padding: 20px 20px;
+   background-color: #D9D9D9;
+  }
+}
+
+.layout .page{
+  display: grid;
+  column-gap: $based-space;
+  row-gap: $based-space;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  // grid-template-rows: 90px 1fr 90px;
+  grid-template-areas: 
+  "hero hero hero hero hero"
+  "description description description description description"
+  "top-box1 top-box1 top-box1 top-box2 top-box3"
+  "main main main sidebar sidebar"
+  "bottom-box1 bottom-box1 bottom-box1 bottom-box2  bottom-box3"
+  "footer footer footer footer footer"
+  ;
+
+  .hero-section{
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: $based-space;
+    .hero-image{
+      //grid-area: hero-image;
+      background-color: $darkness;
+    }
+
+    .hero-title{
+      //grid-area: hero-title;
+      background-color: $darkness;
+    }
+  }
+
+  .description{
+    grid-area: description;
+    background-color: $middle1;
+    color:$text-grey1;
+  }
+
+  footer{
+    grid-area: footer;
+  }
+  
+  .image-box{
+    background-color: #FBACAC;
+    height: 90px;
+  }
+
+  .top-box1{
+    grid-area: top-box1;
+  }
+
+  .top-box2{
+    grid-area: top-box2;
+  }
+
+  .top-box3{
+    grid-area: top-box3;
+  }
+
+  .main-content{
+    background-color: $lightness;
+    grid-area: main;
+    .text-panel{
+      background-color: $middle1;
+      color: $text-grey1
+    }
+  }
+
+  .sidebar{
+    background-color: $darkness;
+    
+    color: $lightness;
+    grid-area: sidebar;
+    ul{
+      li{
+        color: $text-brown;
+        background: $middle1;
+        .image{
+          background-color: $middle3;
+        }
+      }
+    }
+  }
+
+  .bottom-box1{
+    grid-area: bottom-box1;
+  }
+
+  .bottom-box2{
+    grid-area: bottom-box2;
+  }
+
+  .bottom-box3{
+    grid-area: bottom-box3;
+  }
+  
+ 
+} 
+
+.presentation_layout{
+    .card{
+      width: 400px;
+      height: 200px;
+    }
+  }

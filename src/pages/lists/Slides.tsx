@@ -4,7 +4,7 @@ import useListsContext from "../../hooks/use-lists-context";
 import useCardsContext from "../../hooks/use-cards-context";
 import { instanceOf } from "prop-types";
 import { create } from "domain";
-import Slide from "../../components/slide";
+import Slide from "../../components/Slide";
 
 function Slides(){
    const { getListByID, list } = useListsContext()
@@ -46,7 +46,10 @@ function Slides(){
       <div>
         <div>Widok prezentacji</div>
         {renderList}
-        {renderedDeck}
+        <div className="cards flex flex-col gap-4">
+         {renderedDeck}
+        </div>
+        
       </div>
     )
 }

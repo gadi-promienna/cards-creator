@@ -2,11 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import Lists from "./pages/lists/Lists";
-import New from "./pages/lists/New";
+import About from "./pages/About";
 import Slides from "./pages/lists/Slides";
 import Cards from "./pages/lists/Cards";
 import ListLayout from "./layouts/ListLayout";
 import PresentationLayout from "./layouts/PresentationLayout";
+import Contact from "./pages/Contact";
 function Routing(){
    return( <BrowserRouter>
         <Routes>
@@ -16,11 +17,9 @@ function Routing(){
         </Route>
         <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="/my-lists" element={<ListLayout />}>
-                    <Route index element={<Lists />} />
-                    <Route path="/my-lists/new" element={<New />} />
-                </Route>
-            </Route>
+                <Route index element={<About />} />
+                <Route index element={<Contact />} />
+        </Route>
         </Routes>
     </BrowserRouter>
    )
