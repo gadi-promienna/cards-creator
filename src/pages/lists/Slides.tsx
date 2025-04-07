@@ -60,7 +60,6 @@ function Slides(){
       ()=>{getListByIdEffect()},
       []
    )
-
    const createDeckEffect = ()=>{
       if(list?.words){
             deckFetch(list.words)
