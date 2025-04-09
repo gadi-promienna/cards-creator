@@ -1,13 +1,15 @@
 import { useState } from "react"
 import useListsContext from "../hooks/use-lists-context"
 import useCardsContext from "../hooks/use-cards-context"
+import { useNavigate } from "react-router-dom"
 
 function NewListForm(){
     const [name, setName] = useState("")
     const [words, setWords] = useState("")
     const {listCreate} = useListsContext()
     const {deckCreate} = useCardsContext()
-    
+    const navigate = useNavigate()
+
     const onNameChange = (e) => {
         setName(e.target.value)
     }
@@ -21,6 +23,7 @@ function NewListForm(){
         const wordsToArray = words.split(',')
         listCreate(name,wordsToArray)
         deckCreate(wordsToArray)
+        navigate("/presentation/slides")
         //TODO - check words
     }
 
