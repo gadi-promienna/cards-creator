@@ -39,7 +39,7 @@ function Cards(){
 
    const renderedDeck = deck.map(
       (card)=>{
-         return <RenderedCard word={card.word} image_url={card.image_url}></RenderedCard>
+         return <RenderedCard id={card.id} word={card.word} image_url={card.image_url}></RenderedCard>
       }
    )
    return(

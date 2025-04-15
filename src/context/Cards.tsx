@@ -20,8 +20,9 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
     }, [] )
 
     const deckCreate = async(words:[string]) => {
-        words.forEach(word => {
-            cardCreate(word)
+        words.forEach(async word => {
+            const existsingCard = await findCard(word) 
+            if(existsingCard.length==0) cardCreate(word)
         });}
 
     const deckFetch =
@@ -42,7 +43,7 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
     const findCard = async(word:string) => {
         const response = await axios.get(`http://localhost:3001/cards?word=${word}`)
         const results = response.data.filter(
-                (el)=>{ 
+                (el)=>{
                     if("word" in el) return true
                     else return false
                 }
@@ -76,11 +77,22 @@ export function CardsContextProvider({children}: {children: ReactNode} ){
         return false;
     }
 
-    const cardUpdate = async (id:number, word:string) => {
+    const cardUpdate = async (id:number, word:string, image_url:string) => {
         const response = await axios.put(`http://localhost:3001/cards/${id}`, {
+                image_url: image_url,
                 word: word
             })
-        setDeck([...deck, response.data])}
+            const updatedCards = deck.map(
+                (card:Card)=>{
+                    if(card.id===id) {
+                        card.image_url=image_url
+                        card.word=word
+                    }
+                    return card
+                }
+            )
+            setCards(updatedCards)
+    }
  
     const cardAutoUpdate = async (id:number) => {
         const response = await axios.put(`http://localhost:3001/cards/${id}`, {
